@@ -1,134 +1,139 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./assets/src/style.css" />
+    <link rel="stylesheet" href="./assets/src/menu.css" />
 
-  <link rel="stylesheet" href="./assets/src/style.css">
-  <link rel="stylesheet" href="./assets/src/menu.css">
+    <title>Frontend Mentor | Grid landing page</title>
 
-  <title>Frontend Mentor | Grid landing page</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(220, 100%, 74%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+  <body>
+    <!-- Nav -->
+    <header class="container-navigation">
+      <div class="text-logo">
+        <div class="circulo"></div>
+        <p>Bridge Collective</p>
+      </div>
 
-<body>
-  <!-- Nav -->
-  <header class="container-navigation">
-    <div class="text-logo">
-      <div class="circulo"></div>
-      <p>Bridge Collective</p>
-    </div>
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
 
-    <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="hamburguer-icon">
+        <span></span>
+        <span></span>
+      </label>
 
-    <label for="menu-toggle" class="hamburguer-icon">
-      <span></span>
-      <span></span>
-    </label>
+      <nav class="nav-list">
+        <label for="menu-toggle" class="close-menu">&times;</label>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Annual</a></li>
+          <li><a href="#">Report</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav class="nav-list">
-
-      <label for="menu-toggle" class="close-menu">&times;</label>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Annual</a></li>
-        <li><a href="#">Report</a></li>
-        <li><a href="#">Donate</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container-body">
-
-    <!-- Hero -->
-    <div class="hero">
-      <h1 class="title">A classroom for every child.</h1>
-      <p class="text">We fund the schools, train the teachers, and messure what works - so every child we reach today
-        becomes a graduate tomorow.</p>
-    </div>
-
-    <div class="grid">
-      <!-- Stats -->
-      <!--Card 1-->
-      <div class="card">
-        <div class="top">
-          <img src="./assets/images/icon-sparkle.svg" alt="star">
-          <h3>2.4M</h3>
-        </div>
-
-        <div class="text-card">
-          <h4>Students reached</h4>
-          <p>Across 31 countries since 2011. 1,284 Schools</p>
+    <main class="container-body">
+      <!-- Hero -->
+      <div class="hero">
+        <div class="info">
+          <h1 class="title">A classroom for every child.</h1>
+          <p class="text">
+            We fund the schools, train the teachers, and messure what works - so
+            every child we reach today becomes a graduate tomorow.
+          </p>
         </div>
       </div>
 
-      <!--Card 2-->
-      <div class="card">
-        <div class="top">
-          <img src="./assets/images/icon-plus.svg" alt="plus">
-          <h3>1,284</h3>
+      <div class="grid">
+        <!-- Stats -->
+        <!--Card 1-->
+        <div class="card">
+          <div class="top">
+            <img src="./assets/images/icon-sparkle.svg" alt="star" />
+            <h2>2.4M</h2>
+          </div>
+
+          <div class="text-card">
+            <h4>Students reached</h4>
+            <p>Across 31 countries since 2011.</p>
+          </div>
         </div>
-        <div class="text-card">
-          <h4>Schools partnered</h4>
-          <p>In 14 countries, from Kenya to Guatemala.</p>
+
+        <!--Card 2-->
+        <div class="card">
+          <div class="top">
+            <img src="./assets/images/icon-plus.svg" alt="plus" />
+            <h2>1,284</h2>
+          </div>
+          <div class="text-card">
+            <h4>Schools partnered</h4>
+            <p>In 14 countries, from Kenya to Guatemala.</p>
+          </div>
+        </div>
+
+        <!--Card 3-->
+        <div class="card">
+          <div class="top">
+            <img src="./assets/images/icon-arrow-right.svg" alt="arrow right" />
+            <h2>38K</h2>
+          </div>
+          <div class="text-card">
+            <h4>Teachers trained</h4>
+            <p>Equipped with modern tools and methodology.</p>
+          </div>
+        </div>
+
+        <!--Card 4-->
+        <div class="card">
+          <div class="top">
+            <img src="./assets/images/icon-trending-up.svg" alt="arrow up" />
+            <h2>3.1×</h2>
+          </div>
+          <div class="text-card">
+            <h4>Graduation lift</h4>
+            <p>Partner schools outperform national averages 3x.</p>
+          </div>
         </div>
       </div>
-
-      <!--Card 3-->
-      <div class="card">
-        <div class="top">
-          <img src="./assets/images/icon-arrow-right.svg" alt="arrow right">
-          <h3>38K</h3>
-        </div>
-        <div class="text-card">
-          <h4>Teachers trained</h4>
-          <p>Equipped with modern tools and methodology.</p>
-        </div>
-      </div>
-
-      <!--Card 4-->
-      <div class="card">
-        <div class="top">
-          <img src="./assets/images/icon-trending-up.svg" alt="arrow up">
-          <h3>3.1×</h3>
-        </div>
-        <div class="text-card">
-          <h4>Graduation lift</h4>
-          <p>Partner schools outperform national averages 3x.</p>
-        </div>
-      </div>
-
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <p>© 2026 Bridge Collective </p>
-      <p> Registered charity 12345678 </p>
+      <p>© 2026 Bridge Collective</p>
+      <p>Registered charity 12345678</p>
     </footer>
-  </main>
 
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/jamillyds">SAKAMOTO</a>.
+    </div>
+  </body>
 </html>

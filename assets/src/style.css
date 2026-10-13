@@ -9,7 +9,6 @@
 @font-face {
     font-family: 'fontNormal';
     src: url('../fonts/inter/inter-variable.ttf') format('truetype');
-    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -21,9 +20,133 @@ body {
 }
 
 .container-body {
+    width: 100%;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     gap: 2em;
-    padding-top: 1em;
+    padding: 0;
+    padding-top: 0em;
     border-top: 2px solid hsl(220, 100%, 64%);
+}
+
+.hero {
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid hsl(220, 100%, 64%);
+}
+
+.info {
+    padding: 8em 2em;
+    width: 40em;
+}
+
+.info .title {
+    font-family: 'fontBold';
+    font-size: 3rem;
+    width: 7em;
+    padding: 0.5em 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.info .text {
+    font-size: 17px;
+    font-family: 'fontNormal';
+    width: 24em;
+    color: hsl(0, 0%, 100%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    border-left: 2px solid hsl(220, 100%, 64%);
+    border-bottom: 2px solid hsl(220, 100%, 64%);
+    padding: 1em;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'fontNormal';
+    color: hsl(0, 0%, 100%);
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12em;
+    color: hsl(0, 0%, 100%);
+}
+
+.text-card h4{
+    font-family: 'fontNormal';
+    font-size: 14px;
+}
+
+.text-card p {
+    font-family: 'fontNormal';
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'fontNormal';
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    padding: 1em 1em;
+}
+
+@media (max-width: 375px) {
+
+    .container-body {
+        height: 100vh;
+    }
+
+    .hero {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 0 0 2em;
+    }
+
+    .info .title {
+        font-size: 2.2rem;
+        width: 10em;
+    }
+
+    .info .text {
+        font-size: 1rem;
+        font-family: 'fontNormal';
+        width: 20em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .top {
+        padding: 0 2em;
+    }
+
+    footer {
+        margin-top: 56em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+    }
 }
